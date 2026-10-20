@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
-	"name": "schrif-hero",
+	"name": "schrif",
 	"compatibility_date": "2026-10-19",
 	"compatibility_flags": [
 		"nodejs_compat",
