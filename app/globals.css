@@ -151,6 +151,8 @@ button { cursor: pointer; }
   margin: 0; padding: 14px 4px 4px;
   font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
 }
+.terminal__cursor, .connectTerminal__cursor { display: inline-block; margin-left: 2px; color: var(--lime); animation: terminalBlink .78s steps(1, end) infinite; }
+@keyframes terminalBlink { 50% { opacity: 0; } }
 
 /* ---------- Tool tiles ---------- */
 .tools { margin-top: 24px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }

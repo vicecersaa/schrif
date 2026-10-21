@@ -14,15 +14,17 @@ const LINES = [
   'echo "Welcome to Schrif."',
 ];
 
-const TYPE_MS = 32;
-const LINE_PAUSE_MS = 220;
-const START_DELAY_MS = 700;
-const LOOP_PAUSE_MS = 3000; // jeda setelah selesai sebelum ngulang
+const TYPE_MS = 18;
+const LINE_PAUSE_MS = 140;
+const START_DELAY_MS = 350;
+const LOOP_PAUSE_MS = 1800; // jeda setelah selesai sebelum ngulang
 
 const EMPTY = LINES.map(() => "");
 
 export default function Terminal() {
   const [typed, setTyped] = useState<string[]>(EMPTY);
+  const activeLine = typed.findIndex((value, index) => value !== LINES[index]);
+  const cursorLine = activeLine === -1 ? LINES.length - 1 : activeLine;
 
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -55,7 +57,7 @@ export default function Terminal() {
         next[line] = LINES[line].slice(0, char);
         return next;
       });
-      later(() => typeLine(line, char + 1), TYPE_MS + Math.random() * 28);
+      later(() => typeLine(line, char + 1), TYPE_MS + Math.random() * 12);
     };
 
     later(() => typeLine(0, 1), START_DELAY_MS);
@@ -77,7 +79,7 @@ export default function Terminal() {
           {LINES.map((_, i) => (
             <li key={i}>
               <span className="terminal__prompt">$</span>
-              <span>{typed[i]}</span>
+              <span>{typed[i]}{i === cursorLine && <span className="terminal__cursor">_</span>}</span>
             </li>
           ))}
         </ul>
