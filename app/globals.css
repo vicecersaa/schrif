@@ -745,3 +745,13 @@ button { cursor: pointer; }
 .feedbackReviews article > b { margin-top: auto; }
 .feedbackPanel__footer { padding-top: 14px; }
 @media(max-width:700px){.feedbackReviews article{min-height:132px}}
+
+/* Section 03: establish an even vertical rhythm inside empty-slot cards. */
+.workCard { min-height: 370px; padding: 14px; }
+.workTerminal { padding: 1px 2px 12px; }
+.workCard .cardKicker { margin: 15px 0 10px; }
+.workCard h3 { margin: 0 0 9px; line-height: 1.2; }
+.workCard > p:not(.cardKicker) { margin: 0; line-height: 1.55; }
+.workCard small { margin-top: auto; padding-top: 14px; line-height: 1.5; }
+.workCard em { margin-top: 8px; padding-bottom: 2px; }
+@media(max-width:700px){.workCard{min-height:350px}}
