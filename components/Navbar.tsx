@@ -14,7 +14,7 @@ const links = [
 ];
 
 function Logo() {
-  return <Link href="/" className="logo" aria-label="Schrif home"><img src="/logo.png" alt="Schrif" width={150} height={32} /></Link>;
+  return <Link href="/" className="logo" aria-label="Schrif home"><img src="/logo.png" alt="Schrif" width={112} height={24} /></Link>;
 }
 
 export default function Navbar() {
