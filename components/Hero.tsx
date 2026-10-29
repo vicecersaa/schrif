@@ -3,14 +3,14 @@
 import { useState } from "react";
 import Terminal from "./Terminal";
 
-const modes = ["Video", "Photo", "Logo", "Music"];
+const modes = ["UI/UX", "Copywriting", "Logo", "Flow"];
 
 const tools = [
-  { label: "Image", d: "M4 6a2 2 0 0 1 2-2h8M20 10v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6m0 11 4.5-4.5 3 3L15 11l5 5M17 3v4M15 5h4" },
-  { label: "Video", d: "M4 8h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8Zm0 0 2-4h4L8 8m3 0 2-4h4l-2 4M10 13l4 2.5-4 2.5v-5Z" },
-  { label: "Photoshoot", d: "M12 4a8 8 0 1 0 8 8M12 8a4 4 0 1 0 4 4M17 3l.7 1.8L19.5 5.5l-1.8.7L17 8l-.7-1.8-1.8-.7 1.8-.7L17 3Z" },
-  { label: "Photo Editor", d: "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-3 6 3 3m0 0 3-3m-3 3v5M8 14h.01M16 14h.01" },
-  { label: "Audio", d: "M5 10v4M8.5 7v10M12 4v16M15.5 8v8M19 11v2M20 5l.6 1.4L22 7l-1.4.6L20 9l-.6-1.4L18 7l1.4-.6L20 5Z" },
+  { label: "Web UI/UX", d: "M4 5h16v14H4V5Zm0 4h16M8 5v4M7 14h4m2 0h4" },
+  { label: "SEO & Content", d: "m20 20-4-4m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" },
+  { label: "Social Media", d: "M5 6h14v10H9l-4 3V6Zm3 4h8m-8 3h5" },
+  { label: "Brand Identity", d: "m12 3 7 7-7 7-7-7 7-7Zm0 5v4m-2-2h4" },
+  { label: "Campaigns", d: "M4 13h3l9 4V7l-9 4H4v2Zm3 0 1 6h3l-1-5" },
 ];
 
 export default function Hero() {
@@ -28,8 +28,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero__sub">
-            Headshots, product shots, video ads and more, made in seconds from a
-            single prompt or photo. Trusted by 500,000+ creators.
+            Schrif shape your ideas into timeless websites that ensure connectivity.
+            Steady progression and trusted delivery, ensuring your end product will be
+            delivered with high quality.
           </p>
 
           <form className="prompt" onSubmit={(e) => e.preventDefault()}>
@@ -37,7 +38,7 @@ export default function Hero() {
               className="prompt__input"
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
-              placeholder="A dog skateboarding in nyc..."
+              placeholder="Hello Schrif, make me a website for my business"
               aria-label="Describe what you want to create"
             />
             <button type="submit" className="btn btn--lime prompt__btn">
@@ -66,24 +67,20 @@ export default function Hero() {
         </div>
 
         <div className="hero__right">
-          <Terminal />
+          <div className="hero__console">
+            <Terminal />
 
-          <div className="tools">
-            {tools.map((t) => (
-              <a key={t.label} href="#" className="tool">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B5E853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d={t.d} />
-                </svg>
-                <span>{t.label}</span>
-              </a>
-            ))}
+            <div className="tools">
+              {tools.map((t) => (
+                <a key={t.label} href="#" className="tool">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B5E853" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d={t.d} />
+                  </svg>
+                  <span>{t.label}</span>
+                </a>
+              ))}
+            </div>
           </div>
-
-          <dl className="stats">
-            <div><dt>500K+</dt><dd>Creators</dd></div>
-            <div><dt>50M+</dt><dd>Images generated</dd></div>
-            <div><dt>8M+</dt><dd>Videos generated</dd></div>
-          </dl>
 
           <div className="trust">
             <a href="#" className="trust__rating">
@@ -92,7 +89,7 @@ export default function Hero() {
                   <path d="m7 1.5 1.6 3.4 3.7.4-2.8 2.5.8 3.7L7 9.6 3.7 11.5l.8-3.7L1.7 5.3l3.7-.4L7 1.5Z" fill="#0B0B0B" />
                 </svg>
               </span>
-              Rated 4.7/5 on Trustpilot from 38 reviews
+              Trusted partner for your idea
             </a>
             <span className="trust__secure">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B5E853" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

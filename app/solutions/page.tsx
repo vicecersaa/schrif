@@ -1,0 +1,27 @@
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
+const services = [
+  ["foundation", "solutions/01 • foundation", "Shape how people see you.", "A distinct identity. An intuitive experience.", [["brand.init()", "Brand Identity", "Make your business feel unmistakably yours.", "✦"], ["experience.design()", "UI/UX Design", "Clear journeys. Thoughtful interfaces. Less friction.", "▣"]]],
+  ["presence", "solutions/02 • digital presence", "Give your business a home.", "From considered design to a live experience.", [["web.build()", "Web Development", "Your brand, brought to life online. Responsive by design. Built to work.", "</>"]]],
+  ["connection", "solutions/03 • content & connection", "Be found. Be worth following.", "Turn up the signal. Make real connections.", [["content.discover()", "SEO & Content", "Help the right people find what you do.", "◉"], ["social.connect()", "Social Media", "A consistent voice. A reason to connect.", "✦"]]],
+  ["activation", "solutions/04 • campaign & activation", "Put your next move in motion.", "Creative that communicates. Campaigns with direction.", [["campaign.create()", "Promotional Content", "Make your launch impossible to scroll past.", "▶"], ["ads.activate()", "Performance Ads", "Reach with intent. Test, learn and refine.", "⌁"]]],
+] as const;
+
+const workflow = [["01", "Idea Planning", "Find the real challenge.", "●"], ["02", "Pitching", "Agree on a direction.", "↗"], ["03", "Design", "Make the idea tangible.", "▦"], ["04", "Development", "Build what works.", "</>"], ["05", "Review", "Refine every detail.", "•"], ["06", "Launch", "Make your next move.", "↗"]] as const;
+
+function ServiceArt({ mark, index }: { mark: string; index: number }) {
+  return <div className={`solutionArt solutionArt--${index}`}><span className="artOrbit" /><span className="artPanel">{mark}</span><span className="artLime" /><span className="artLine" /></div>;
+}
+
+export default function SolutionsPage() {
+  return <main id="top"><Navbar />
+    <section className="solutionsHero"><div className="solutionsShell solutionsHero__grid"><div><p className="solutionsCode">schrif / solutions</p><h1>Your next move.<em>Built with intent.</em>Executed right.</h1><p className="solutionsLead">Strategy, design and execution. Connected to make your next move matter.</p><div className="solutionsActions"><Link href="/connect" className="btn btn--lime">Start a project <span>↗</span></Link><a href="#foundation" className="btn solutionsGhost">Explore solutions <span>↗</span></a></div><p className="solutionsTiny">One challenge. The right connections.</p></div><div className="solutionHeroArt"><p>● CREATIVE ENGINE / READY</p><div className="heroOrbit" /><div className="heroCube"><small>INPUT / YOUR NEXT MOVE</small><b>idea_</b><i>✦</i><strong>OUTPUT / BUILT RIGHT<br /><span>Make it real. ↗</span></strong></div><div className="heroKey">STRATEGY<br />+ DESIGN<br />+ EXECUTION</div></div></div></section>
+    <section className="solutionsIntro"><div className="solutionsShell"><div><span>ONE CHALLENGE. THE RIGHT CONNECTIONS.</span><span>STRATEGY　✦　 DESIGN　✦　 EXECUTION</span></div></div></section>
+    {services.map(([id, label, title, lead, cards], sectionIndex) => <section id={id} className="solutionsBlock" key={id}><div className="solutionsShell"><div className="solutionsRule"><span>/{label}</span></div><div className="solutionsHeading"><h2>{title}</h2><p>{lead}</p></div><div className={`solutionCardGrid solutionCardGrid--${cards.length}`}>{cards.map(([code, name, description, mark], index) => <article className={`solutionCard solutionCard--${sectionIndex}-${index}`} key={name}><header><span>{code}</span><b>↗</b></header><ServiceArt mark={mark} index={sectionIndex * 2 + index} /><footer><h3>{name}</h3><p>{description}</p><small>{name === "Brand Identity" ? "Logo / Visual language / Guidelines" : name === "UI/UX Design" ? "User flows / Wireframes / Prototypes" : name === "Web Development" ? "Websites / Landing pages / CMS" : name === "SEO & Content" ? "Search / Content / On-page SEO" : name === "Social Media" ? "Content / Social visuals / Copy" : name === "Promotional Content" ? "Campaigns / Key visuals / Video" : "Audience planning / Ad creative / Optimisation"}</small></footer></article>)}</div>{id === "activation" && <p className="solutionFootnote">// CONFIGURED TOGETHER. NOT FIXED BUNDLES.</p>}</div></section>)}
+    <section className="solutionsWorkflow"><div className="solutionsShell"><div className="solutionsRule"><span>05 / the workflow</span></div><div className="solutionsHeading"><h2>From first idea to what’s next.</h2><p>One connected process. With you at every point.</p></div><div className="workflowRail">{workflow.map(([number, title, copy, icon]) => <article key={number}><span>{number}</span><i>{icon}</i><h3>{title}</h3><p>{copy}</p></article>)}</div><p className="solutionFootnote">◉ FEEDBACK CONNECTS EVERY STAGE.</p></div></section>
+    <section className="solutionsCta"><div className="solutionsShell"><div><p className="solutionsCode">06 / HUMAN INPUT. INTENTIONAL OUTPUT.</p><h2>Not sure where to start?<em>Start with the problem.</em></h2><p>Bring your idea. We&apos;ll find the right starting point together.</p><Link href="/connect" className="btn solutionDarkButton">Book a consultation　↗</Link></div><div className="ctaSketch"><span>schrif / build</span><b>&lt;/&gt;</b><i>✦</i><small>Let&apos;s build together.</small></div></div></section>
+    <Footer />
+  </main>;
+}

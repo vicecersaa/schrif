@@ -1,0 +1,25 @@
+/* Pixel layout pass for the Solutions hero. */
+.solutionsShell { width: min(100% - 192px, 1248px); }
+.solutionsHero { padding: 48px 0 76px; }
+.solutionsHero__grid { grid-template-columns: 520px 1fr; gap: 86px; }
+.solutionsHero h1 { max-width: 530px; margin: 84px 0 34px; font-size: 62px; line-height: 1.02; letter-spacing: -.055em; }
+.solutionsLead { max-width: 430px; color: #a5a59e; font-size: 16px; line-height: 1.5; }
+.solutionsActions { gap: 12px; margin-top: 31px; }
+.solutionsActions .btn { min-width: 181px; min-height: 50px; justify-content: space-between; padding: 0 16px; border-radius: 3px; font-size: 13px; }
+.solutionsGhost { min-width: 203px !important; border-color: #45483e; background: #11120f; }
+.solutionHeroArt { min-height: 512px; overflow: visible; }
+.solutionHeroArt > p { top: 0; right: 0; font-size: 11px; }
+.heroOrbit { width: 410px; height: 410px; top: 94px; left: 54%; border-color: #3a432c; transform: translateX(-50%); }
+.heroOrbit::before { inset: 55px -35px; border-color: #38412b; }
+.heroOrbit::after { inset: -35px 90px; border-color: #38412b; }
+.heroCube { top: 168px; left: 53%; width: 302px; height: 270px; padding: 15px; border: 2px solid var(--lime); box-shadow: 0 0 0 1px #8cb62f, 18px 20px 0 #11140e; transform: translateX(-50%) rotate(-6deg); }
+.heroCube::after { position: absolute; right: -64px; top: 21px; width: 64px; height: 205px; border: 2px solid var(--lime); border-left: 0; content: ""; }
+.heroCube small { color: #9e9f95; font-size: 9px; }
+.heroCube b { position: absolute; left: -149px; top: 29px; width: 164px; margin: 0; padding: 16px 14px; border: 1px solid #4a5140; border-radius: 3px; background: #11120f; color: var(--lime); font-size: 21px; }
+.heroCube b::before { display: block; margin-bottom: 12px; color: #9e9f95; content: "INPUT / YOUR NEXT MOVE"; font: 9px var(--mono); }
+.heroCube i { top: 65px; right: 75px; font-size: 112px; }
+.heroCube strong { right: -170px; bottom: -28px; width: 173px; padding: 17px 15px; font-size: 9px; }
+.heroCube strong span { margin-top: 9px; font-size: 20px; }
+.heroKey { bottom: 50px; left: 2px; color: #b5e853; font-size: 9px; line-height: 2.15; }
+.solutionHeroArt::after { position: absolute; right: -2px; bottom: 104px; left: 42px; height: 1px; background: #33382d; content: ""; }
+@media(max-width:760px) { .solutionsShell { width: min(100% - 32px, 1248px); } .solutionsHero__grid { grid-template-columns: 1fr; gap: 26px; } .solutionsHero h1 { margin-top: 46px; font-size: clamp(44px, 14vw, 62px); } .solutionHeroArt { min-height: 350px; transform: scale(.8); transform-origin: left top; margin-bottom: -72px; } }

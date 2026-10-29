@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 
 const LINES = [
   "schrif --connect",
-  'echo "Every AI model. One plan."',
-  'echo "Endless content. One creative workspace."',
-  "load --tools images video audio",
-  'create --from "a single prompt or photo"',
-  'generate --output "Your next big idea"',
+  'echo "Input your plan:"',
+  'echo "Input your objective:"',
+  "load -- check.exe",
+  "create -- solution.exe",
+  "generate -- solution.exe",
   'echo "Imagine it. Create it. Make it yours."',
   "status --creative-engine ready",
   'echo "Welcome to Schrif."',

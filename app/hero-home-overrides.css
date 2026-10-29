@@ -1,0 +1,33 @@
+/* Home hero: desktop composition matched to the Schrif reference. */
+.hero { padding: 50px 0 86px; }
+.hero__inner { width: min(100% - 192px, 1248px); grid-template-columns: minmax(0, .88fr) minmax(0, 1fr); gap: 72px; align-items: center; }
+.hero__left { padding-top: 4px; }
+.hero__title { font-size: clamp(48px, 4.7vw, 64px); line-height: .98; letter-spacing: -.06em; }
+.hero__sub { max-width: 450px; margin-top: 30px; color: #d1d1ca; font-size: 16px; line-height: 1.65; }
+.prompt { max-width: 470px; margin-top: 27px; min-height: 52px; padding: 5px 6px 5px 12px; border-color: #2c3029; border-radius: 7px; background: #0e0f0d; }
+.prompt__input { padding: 9px 0; font-size: 13px; }
+.prompt__input::placeholder { color: #e7e7e1; opacity: 1; }
+.prompt__btn { min-width: 102px; min-height: 40px; justify-content: center; padding: 9px 13px; border-radius: 5px; font-size: 13px; }
+.chips { gap: 7px; margin-top: 10px; }
+.chip { padding: 7px 12px; border-radius: 5px; background: #121410; border-color: #34382d; font-size: 12px; }
+.hero__link { margin-top: 28px; font-size: 12px; }
+.hero__right { min-width: 0; }
+.hero__console { min-height: 408px; padding: 8px; border: 1px solid #30362b; border-radius: 9px; background: #171a14; box-shadow: 0 12px 30px rgba(0,0,0,.24); }
+.hero__console .terminal { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.terminal__screen { height: 300px; padding: 15px 14px 0; border-radius: 5px; border-color: #273020; }
+.terminal__user { gap: 6px; margin-bottom: 9px; font-size: 12px; }
+.terminal__dot { width: 6px; height: 6px; }
+.terminal__lines { font-size: 12px; line-height: 19px; }
+.terminal__lines li { min-height: 19px; }
+.terminal__prompt { width: 18px; }
+.terminal__caption { padding: 9px 1px 1px; font-size: 10px; letter-spacing: .09em; }
+.hero__console .tools { gap: 7px; margin-top: 9px; }
+.tool { min-height: 68px; gap: 8px; padding: 10px 4px 8px; border-radius: 6px; border-color: #34382d; background: #171a14; font-size: 10px; }
+.tool svg { width: 17px; height: 17px; }
+.trust { gap: 28px; margin-top: 21px; font-size: 13px; color: #e6e6de; }
+.trust__rating,.trust__secure { gap: 8px; }
+.trust__star { width: 17px; height: 17px; border-radius: 3px; }
+.trust__star svg { width: 10px; height: 10px; }
+.trust__secure svg { width: 16px; height: 16px; }
+@media (max-width: 900px) { .hero { padding: 42px 0 66px; } .hero__inner { width: min(100% - 48px, 680px); grid-template-columns: 1fr; gap: 44px; } .hero__sub,.prompt { max-width: 540px; } .hero__right { max-width: 620px; } }
+@media (max-width: 600px) { .hero__inner { width: min(100% - 32px, 520px); } .hero__title { font-size: clamp(43px, 13vw, 58px); } .hero__console { min-height: 0; } .terminal__screen { height: 220px; } .tools { grid-template-columns: repeat(3,1fr); } }
