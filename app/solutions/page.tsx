@@ -12,7 +12,43 @@ const services = [
 const workflow = [["01", "Idea Planning", "Find the real challenge.", "●"], ["02", "Pitching", "Agree on a direction.", "↗"], ["03", "Design", "Make the idea tangible.", "▦"], ["04", "Development", "Build what works.", "</>"], ["05", "Review", "Refine every detail.", "•"], ["06", "Launch", "Make your next move.", "↗"]] as const;
 
 function ServiceArt({ mark, index }: { mark: string; index: number }) {
-  return <div className={`solutionArt solutionArt--${index}`}><span className="artOrbit" /><span className="artPanel">{mark}</span><span className="artLime" /><span className="artLine" /></div>;
+  if (index === 0) {
+    return <div className="solutionArt solutionArt--brand">
+      <span className="brandArt__grid" />
+      <div className="brandArt__board"><span className="brandArt__label">SCHRIF / IDENTITY SYSTEM</span><span className="brandArt__orbit" /><span className="brandArt__cross brandArt__cross--horizontal" /><span className="brandArt__cross brandArt__cross--vertical" /><span className="brandArt__star" /><small>FORM_01</small></div>
+      <div className="brandArt__type"><b>Aa</b><span /><small>BUILT TO BE YOU.</small></div>
+      <div className="brandArt__swatches"><i /><i /><i /></div>
+      <p>A DISTINCTIVE START.</p>
+    </div>;
+  }
+  if (index === 2) {
+    return <div className="solutionArt solutionArt--web">
+      <span className="webArt__grid" />
+      <div className="webArt__code"><small>schrif / build-preview</small><strong>&lt;intent&gt;<br />&nbsp;&nbsp;&lt;design /&gt;<br />&nbsp;&nbsp;&lt;build responsive<br />&nbsp;&nbsp;&lt;launch /&gt;<br />&lt;/intent&gt;</strong><b>▣&nbsp; READY TO LAUNCH</b></div>
+      <div className="webArt__preview"><span /><small>LIVE PREVIEW</small><h4>Ideas.<br />Now online.</h4><i>✱</i><em /><b /><strong /></div>
+      <span className="webArt__cursor" />
+    </div>;
+  }
+  if (index === 4) {
+    return <div className="solutionArt solutionArt--seo">
+      <span className="seoArt__grid" />
+      <div className="seoArt__radar"><i /><i /><i /><b /><em /><small>DISCOVERABILITY</small></div>
+      <div className="seoArt__panel"><small>YOUR NEXT DISCOVERY_</small><i>↗</i><b /><b /><b /><b /><em /></div>
+    </div>;
+  }
+  if (index === 5) {
+    return <div className="solutionArt solutionArt--social">
+      <span className="socialArt__grid" /><span className="socialArt__orbit" />
+      <div className="socialArt__hello">hello_</div><div className="socialArt__poster"><small>● SCHRIF / SOCIAL</small><b>MAKE<br />SOME<br />SIGNAL.</b><i>♡　↗　✦</i></div><span className="socialArt__star">✱</span><div className="socialArt__talk">let&apos;s talk.</div>
+    </div>;
+  }
+  if (index === 6) {
+    return <div className="solutionArt solutionArt--campaign"><span className="campaignArt__grid" /><div className="campaignArt__poster"><small>CAMPAIGN / CREATE</small><b>NEXT<br />IS<br />NOW.</b><i>IMAGINE. CREATE.</i></div><div className="campaignArt__clapper"><span /><b>▶</b><small>CONTENT / IN MOTION</small></div><em>✱</em><p>ONE IDEA. MANY FORMATS.</p></div>;
+  }
+  if (index === 7) {
+    return <div className="solutionArt solutionArt--ads"><span className="adsArt__grid" /><div className="adsArt__rings"><i /><i /><i /><b /></div><div className="adsArt__note"><b>TEST → LEARN</b><small>REFINE → REPEAT</small></div><span className="adsArt__path" /><span className="adsArt__cursor" /><p>INTENT, NOT GUESSWORK.</p></div>;
+  }
+  return <div className={`solutionArt solutionArt--${index}`}><span className="artOrbit" /><span className="artPanel">{mark}</span><span className="artCursor" /><span className="artLime" /><span className="artLine" /></div>;
 }
 
 export default function SolutionsPage() {
