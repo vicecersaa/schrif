@@ -1056,3 +1056,45 @@
   }
   .ctaSketch > * { visibility: hidden; }
 }
+
+/* The page relies on breathing room, not page-wide rules between sections. */
+.solutionsHero,
+.solutionsIntro,
+.solutionsBlock,
+.solutionsWorkflow,
+.solutionsCta {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.solutionsBlock .solutionsRule,
+.solutionsWorkflow .solutionsRule {
+  border: 0 !important;
+}
+
+@media (min-width: 761px) {
+  .ctaSketch small {
+    position: absolute;
+    z-index: 3;
+    right: 100px;
+    bottom: 46px;
+    display: block;
+    visibility: visible;
+    padding: 8px 13px;
+    border: 1px solid #141810;
+    border-radius: 2px;
+    background: #fbfaf6;
+    color: #10130c;
+    font: 700 9px/1 var(--mono);
+    letter-spacing: .02em;
+    transform: rotate(-1deg);
+  }
+
+  /* Keep section separators, but only inside the same max-width shell as content. */
+  .solutionsBlock .solutionsRule,
+  .solutionsWorkflow .solutionsRule {
+    padding-top: 25px;
+    border-top: 1px solid #2d3129 !important;
+    border-bottom: 0 !important;
+  }
+}
