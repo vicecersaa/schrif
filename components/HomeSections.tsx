@@ -16,6 +16,10 @@ const faqs = [["What services does Schrif offer?", "Web Development, SEO & Conte
 
 function Label({ children, number }: { children: React.ReactNode; number: string }) { return <p className="homeLabel"><span>{number}</span>{children}</p>; }
 
+function ArrowIcon() {
+  return <svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" style={{ marginLeft: 10, verticalAlign: -2 }}><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>;
+}
+
 function TypeSnippet({ children }: { children: string }) {
   const [typed, setTyped] = useState("");
   useEffect(() => {
@@ -75,7 +79,7 @@ export default function HomeSections() {
 
     <section className="homeSection homeApproach"><div className="homeShell"><div className="approachCopy"><Label number="06 /">ONE CONNECTED APPROACH</Label><h2>One partner. A shared<br />direction.</h2><p>SCHRIF connects strategy, technology, and marketing to help businesses build, reach, and grow with intent.</p><ol>{[["Understand the problem", "We ask better questions, identify your goals, and explore what a meaningful outcome looks like for your business."], ["Align on the direction", "We connect the right disciplines and agree clear expectations. Every decision stays tied to the problem worth solving."], ["Build, review, and refine", "We prioritize usability, performance, and quality. Thoughtful collaboration keeps the work moving in the right direction."]].map(([title, copy], i) => <li key={title}><b>0{i + 1}</b><div><h3>{title}</h3><p>{copy}</p></div></li>)}</ol><Link href="/connect" className="btn btn--lime">Share a problem</Link></div><figure className="approachVisual"><figcaption><b>?</b> SCHRIF / CONNECTED-BY-DESIGN</figcaption><img src="/connected-dashboard.png" alt="Schrif creative workspace dashboard" /></figure></div></section>
 
-    <section className="homeSection servicesOverview"><div className="homeShell"><div className="homeHeading"><div><Label number="07 /">AGENCY SERVICES</Label><h2>Agency services, all in one place</h2></div><Link href="/connect" className="btn btn--outline">Explore all services</Link></div><div className="serviceCards">{services.map(([name, copy], index) => <article className={index === 0 ? "is-featured" : ""} key={name}><span>Agency</span><h3>{name}</h3><p>{copy}</p><a href="/connect">Explore <b>?</b></a></article>)}</div></div></section>
+    <section className="homeSection servicesOverview"><div className="homeShell"><div className="homeHeading"><div><Label number="07 /">AGENCY SERVICES</Label><h2>Agency services, all in one place</h2></div><Link href="/connect" className="btn btn--outline">Explore all services</Link></div><div className="serviceCards">{services.map(([name, copy], index) => <article className={index === 0 ? "is-featured" : ""} key={name}><span>Agency</span><h3>{name}</h3><p>{copy}</p><a href="/connect">Explore<ArrowIcon /></a></article>)}</div></div></section>
 
     <section id="use-cases" className="homeSection homeCases"><div className="homeShell"><div className="homeHeading"><div><Label number="08 /">BUILT AROUND YOUR WORK</Label><h2>The same studio, tuned to your work</h2></div><Link href="/connect" className="btn btn--outline">See every solution</Link></div><div className="caseGrid">{[["For Influencers", "Daily posts, headshots, and UGC without a content team"], ["For Ecommerce", "Product shots and video ads from one phone photo"], ["For Small Business", "A brand kit, flyers, and promo video on one plan"], ["For Agencies", "Run every client campaign on one subscription"]].map(([title, copy], i) => <article key={title}><div className={`caseImage caseImage--${i + 1}`} role="img" aria-label={title}></div><h3>{title}</h3><p>{copy}</p><a href="/connect">See the workflow</a></article>)}</div></div></section>
 
