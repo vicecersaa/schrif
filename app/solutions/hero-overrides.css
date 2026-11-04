@@ -5,7 +5,7 @@
 .solutionsHero h1 { max-width: 530px; margin: 84px 0 34px; font-size: 62px; line-height: 1.02; letter-spacing: -.055em; }
 .solutionsLead { max-width: 430px; color: #a5a59e; font-size: 16px; line-height: 1.5; }
 .solutionsActions { gap: 12px; margin-top: 31px; }
-.solutionsActions .btn { min-width: 181px; min-height: 50px; justify-content: space-between; padding: 0 16px; border-radius: 3px; font-size: 13px; }
+.solutionsActions .btn { min-width: 181px; min-height: 50px; justify-content: flex-start; padding: 0 16px; border-radius: 4px; font-size: 13px; }
 .solutionsGhost { min-width: 203px !important; border-color: #45483e; background: #11120f; }
 .solutionHeroArt { min-height: 512px; overflow: visible; }
 .solutionHeroArt > p { top: 0; right: 0; font-size: 11px; }
