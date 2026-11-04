@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
 import "./globals.css";
 import "./solutions/solutions.css";
 import "./solutions/hero-overrides.css";
 import "./hero-home-overrides.css";
 import CookieConsent from "@/components/CookieConsent";
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-manrope",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Schrif — Plan playfully",
@@ -25,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={manrope.variable}>
+    <html lang="en" style={{ "--font-manrope": 'Manrope, Arial, sans-serif' } as React.CSSProperties}>
       <body>{children}<CookieConsent /></body>
     </html>
   );
