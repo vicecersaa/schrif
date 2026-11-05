@@ -9,8 +9,9 @@ const links = [
   { label: "Video", href: "/#video" },
   { label: "Use Cases", href: "/#use-cases" },
   { label: "Models", href: "/#models" },
+  { label: "About", href: "/about" },
   { label: "Solutions", href: "/solutions" },
-  { label: "Pricing", href: "/#pricing", badge: "30% OFF" },
+  { label: "Pricing", href: "/pricing", badge: "30% OFF" },
 ];
 
 function Logo() {
@@ -25,7 +26,7 @@ export default function Navbar() {
       <div className="nav__inner">
         <Logo />
         <nav className={`nav__links ${open ? "is-open" : ""}`} aria-label="Primary">
-          {links.map((link) => <Link key={link.label} href={link.href} className={`nav__link ${pathname === "/solutions" && link.label === "Solutions" ? "is-active" : ""}`} onClick={() => setOpen(false)}>{link.label}{link.badge && <span className="nav__badge">{link.badge}</span>}</Link>)}
+          {links.map((link) => <Link key={link.label} href={link.href} className={`nav__link ${pathname === link.href ? "is-active" : ""}`} onClick={() => setOpen(false)}>{link.label}{link.badge && <span className="nav__badge">{link.badge}</span>}</Link>)}
           <Link href="/connect" className={`nav__link nav__link--connect ${pathname === "/connect" ? "is-active" : ""}`} onClick={() => setOpen(false)}>Connect</Link>
         </nav>
         <div className="nav__actions">
