@@ -1,0 +1,8 @@
+/* One shared content container: all pages align with the navbar and footer. */
+.hero__inner,
+.connectShell,
+.homeShell,
+.solutionsShell,
+main [class*="shell"] {
+  width: min(calc(100% - (2 * var(--site-gutter))), var(--site-max)) !important;
+}
