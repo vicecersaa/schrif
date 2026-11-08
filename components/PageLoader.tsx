@@ -54,7 +54,7 @@ export default function PageLoader() {
     <div className={`pageLoader ${visible ? "is-visible" : ""}`} aria-hidden={!visible}>
       <div key={`sequence-${run}`} className="pageLoader__sequence">
         <div className="pageLoader__word" aria-label="Schrif">Schrif<i>&#9612;</i></div>
-        <p className="pageLoader__command"><b>&gt;</b> schrif --init creative<i>&#9612;</i></p>
+        <p className="pageLoader__command"><b>&gt;</b> <span>schrif --init creative</span><i>&#9612;</i></p>
       </div>
       <div key={`progress-${run}`} className="pageLoader__progress" aria-hidden="true"><span /></div>
       <p key={`percent-${run}`} className="pageLoader__percent">100%</p>

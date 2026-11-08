@@ -1,0 +1,291 @@
+
+> schrif-hero@0.1.0 dev
+> next dev
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\James\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\James\schrif\package-lock.json
+
+   ▲ Next.js 15.5.28
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.101.8:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.5s
+ ○ Compiling /solutions ...
+ ✓ Compiled /solutions in 1421ms (640 modules)
+ GET /solutions 200 in 2119ms
+ GET /solutions 200 in 233ms
+ GET /solutions 200 in 208ms
+ ✓ Compiled in 2.2s (654 modules)
+ GET /solutions 200 in 340ms
+ GET /solutions 200 in 552ms
+ GET /solutions 200 in 250ms
+ GET /solutions 200 in 166ms
+ ✓ Compiled in 576ms (654 modules)
+ GET /solutions 200 in 245ms
+ GET /solutions 200 in 277ms
+ GET /solutions 200 in 116ms
+ GET /solutions 200 in 178ms
+ ✓ Compiled in 387ms (654 modules)
+ GET /solutions 200 in 157ms
+ GET /solutions 200 in 231ms
+ GET /solutions 200 in 187ms
+ ○ Compiling / ...
+ ✓ Compiled / in 603ms (653 modules)
+ GET / 200 in 1125ms
+ ✓ Compiled in 722ms (667 modules)
+ GET / 200 in 231ms
+ GET /solutions 200 in 228ms
+ GET /solutions 200 in 120ms
+ GET /solutions 200 in 172ms
+ ✓ Compiled in 361ms (414 modules)
+ GET /solutions 200 in 181ms
+ ✓ Compiled in 345ms (667 modules)
+ GET /solutions 200 in 200ms
+ ✓ Compiled in 253ms (667 modules)
+ GET /solutions 200 in 203ms
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '728222172'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2041521433'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2041521433'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2041521433'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '728222172'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '728222172'
+}
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  digest: '3660069428'
+}
+ ⨯ Error: Could not find the module "C:\Users\James\schrif\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '728222172'
+}
+[TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/solutions'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1006ms (1009 modules)
+ ⨯ Error: Cannot find module './897.js'
+Require stack:
+- C:\Users\James\schrif\.next\server\webpack-runtime.js
+- C:\Users\James\schrif\.next\server\pages\_document.js
+- C:\Users\James\schrif\node_modules\next\dist\server\require.js
+- C:\Users\James\schrif\node_modules\next\dist\server\load-components.js
+- C:\Users\James\schrif\node_modules\next\dist\build\utils.js
+- C:\Users\James\schrif\node_modules\next\dist\build\swc\options.js
+- C:\Users\James\schrif\node_modules\next\dist\build\swc\index.js
+- C:\Users\James\schrif\node_modules\next\dist\build\analysis\parse-module.js
+- C:\Users\James\schrif\node_modules\next\dist\build\analysis\get-page-static-info.js
+- C:\Users\James\schrif\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\James\schrif\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\James\schrif\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\James\schrif\.next\server\app\solutions\page.js:2:23647)
+    at Object.<anonymous> (C:\Users\James\schrif\.next\server\app\solutions\page.js:2:23699) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/solutions'
+}
+ GET /solutions 500 in 4617ms
+ GET /solutions 500 in 1617ms
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.28
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.101.8:3000
+
+ ✓ Starting...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+   The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+   	- include was updated to add '.next-dev/types/**/*.ts'
+
+ ✓ Ready in 3.9s
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /solutions ...
+ ⚠ ./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+Warning
+
+(234:335) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+./app/globals.css
+
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+Warning
+
+(234:3072) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+./app/globals.css
+
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+Warning
+
+(238:58) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+./app/globals.css
+
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+Warning
+
+(659:67) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css
+./app/globals.css
+
+./app/solutions/solutions.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/solutions/solutions.css
+Warning
+
+(1:2680) autoprefixer: end value has mixed support, consider using flex-end instead
+
+Import trace for requested module:
+./app/solutions/solutions.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/solutions/solutions.css
+./app/solutions/solutions.css
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /solutions 200 in 7270ms
+ GET /solutions 200 in 211ms
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|C:\Users\James\schrif\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[2]!C:\Users\James\schrif\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[3]!C:\Users\James\schrif\app\globals.css': No serializer registered for Warning
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 4 items } -> webpack/lib/ModuleWarning -> Warning
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|C:\Users\James\schrif\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[2]!C:\Users\James\schrif\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[10].use[3]!C:\Users\James\schrif\app\solutions\solutions.css': No serializer registered for Warning
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> Array { 1 items } -> webpack/lib/ModuleWarning -> Warning
+ GET /solutions 200 in 136ms
+ GET /solutions 200 in 193ms
+ ✓ Compiled /solutions in 1012ms (654 modules)
+ GET /solutions 200 in 291ms
+ GET /solutions 200 in 259ms
+ ✓ Compiled in 424ms (654 modules)
+ GET /solutions 200 in 141ms
+ ✓ Compiled in 299ms (405 modules)
+ GET /solutions 200 in 234ms
+ ✓ Compiled in 257ms (654 modules)
+ GET /solutions 200 in 159ms
+ ✓ Compiled in 411ms (654 modules)
+ GET /solutions 200 in 150ms
+ GET /solutions 200 in 255ms
+ GET /solutions 200 in 209ms
+ ✓ Compiled in 442ms (654 modules)
+ GET /solutions 200 in 209ms
+ ✓ Compiled in 433ms (654 modules)
+ GET /solutions 200 in 154ms
+ GET /solutions 200 in 213ms
+ ✓ Compiled in 327ms (654 modules)
+ GET /solutions 200 in 133ms
+ ✓ Compiled in 826ms (654 modules)
+ GET /solutions 200 in 211ms
+ ✓ Compiled in 405ms (405 modules)
+ GET /solutions 200 in 133ms
+ GET /solutions 200 in 391ms
+ ✓ Compiled in 257ms (654 modules)
+ GET /solutions 200 in 154ms
+ GET /solutions 200 in 374ms
+ ✓ Compiled in 426ms (654 modules)
+ GET /solutions 200 in 205ms
+ GET /solutions 200 in 173ms
+ ✓ Compiled in 359ms (654 modules)
+ GET /solutions 200 in 141ms
+ ✓ Compiled in 187ms (654 modules)
+ GET /solutions 200 in 144ms
+ GET /solutions 200 in 219ms
+ GET /solutions 200 in 115ms
+ ✓ Compiled in 272ms (654 modules)
+ GET /solutions 200 in 156ms
+ GET /solutions 200 in 230ms
+ ✓ Compiled in 385ms (654 modules)
+ GET /solutions 200 in 137ms
+ ✓ Compiled in 603ms (654 modules)
+ GET /solutions 200 in 138ms
+ ✓ Compiled in 284ms (405 modules)
+ GET /solutions 200 in 136ms
+ ✓ Compiled in 319ms (654 modules)
+ GET /solutions 200 in 157ms
+ GET /solutions 200 in 382ms
+ ✓ Compiled in 370ms (654 modules)
+ GET /solutions 200 in 186ms
+ GET /solutions 200 in 304ms
+ ✓ Compiled in 222ms (405 modules)
+ GET /solutions 200 in 134ms
+ GET /solutions 200 in 179ms
+ ✓ Compiled in 1031ms (654 modules)
+ GET /solutions 200 in 294ms
+ ✓ Compiled in 699ms (654 modules)
+ GET /solutions 200 in 208ms
+ GET /solutions 200 in 282ms
+ ✓ Compiled in 567ms (654 modules)
+ GET /solutions 200 in 265ms
+ GET /solutions 200 in 196ms
+ ✓ Compiled in 455ms (405 modules)
+ GET /solutions 200 in 275ms
+ ✓ Compiled in 599ms (654 modules)
+ GET /solutions 200 in 237ms
+ ✓ Compiled in 448ms (654 modules)
+ GET /solutions 200 in 197ms
+ ✓ Compiled in 396ms (654 modules)
+ GET /solutions 200 in 154ms
+ ✓ Compiled in 438ms (654 modules)
+ GET /solutions 200 in 129ms
+ ✓ Compiled in 245ms (654 modules)
+ GET /solutions 200 in 124ms
+ ✓ Compiled in 209ms (654 modules)
+ GET /solutions 200 in 201ms
+ GET /solutions 200 in 349ms
+ ✓ Compiled in 447ms (654 modules)
+ GET /solutions 200 in 167ms
+ ✓ Compiled in 295ms (654 modules)
+ GET /solutions 200 in 222ms
+ GET /solutions 200 in 226ms
+ GET /solutions 200 in 175ms
+ GET /solutions 200 in 235ms
+ GET /solutions 200 in 223ms
+ GET /solutions 200 in 173ms
+ GET /solutions 200 in 189ms
+ GET /solutions 200 in 314ms
+ GET /solutions 200 in 196ms
+ GET /solutions 200 in 334ms
+ GET /solutions 200 in 245ms
+ GET /solutions 200 in 164ms
+ GET /solutions 200 in 191ms
+ GET /solutions 200 in 316ms
+ GET /solutions 200 in 209ms
+ GET /solutions 200 in 161ms
+ ✓ Compiled in 547ms (654 modules)
+ GET /solutions 200 in 190ms
+ GET /solutions 200 in 295ms
+ ○ Compiling / ...
+ ✓ Compiled / in 908ms (653 modules)
+ GET / 200 in 1082ms
+ GET /solutions 200 in 89ms
+ ✓ Compiled in 576ms (667 modules)
+ GET /solutions 200 in 365ms
+ ✓ Compiled in 416ms (667 modules)
+ GET /solutions 200 in 160ms
+ ✓ Compiled in 567ms (667 modules)
+ GET /solutions 200 in 183ms
