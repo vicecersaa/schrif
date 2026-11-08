@@ -5,6 +5,7 @@ import "./solutions/hero-overrides.css";
 import "./hero-home-overrides.css";
 import "./container-overrides.css";
 import CookieConsent from "@/components/CookieConsent";
+import PageLoader from "@/components/PageLoader";
 
 export const metadata: Metadata = {
   title: "Schrif — Plan playfully",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" style={{ "--font-manrope": 'Manrope, Arial, sans-serif' } as React.CSSProperties}>
-      <body>{children}<CookieConsent /></body>
+      <body><PageLoader />{children}<CookieConsent /></body>
     </html>
   );
 }

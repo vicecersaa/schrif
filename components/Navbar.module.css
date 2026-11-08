@@ -1,0 +1,17 @@
+.nav { position: sticky; top: 0; z-index: 50; background: #090a09; border-bottom: 1px solid #242824; }
+.inner { width: min(calc(100% - (2 * var(--site-gutter))), var(--site-max)); height: 64px; margin: 0 auto; display: grid; grid-template-columns: minmax(120px, 1fr) auto minmax(230px, 1fr); align-items: center; column-gap: 24px; }
+.logo { justify-self: start; display: inline-flex; align-items: center; }
+.logo img { width: 116px; height: auto; display: block; }
+.links { display: flex; align-items: stretch; justify-content: center; gap: clamp(14px, 1.25vw, 23px); height: 100%; }
+.link, .contact { color: #e9e9e4; text-decoration: none; font-size: 14px; font-weight: 600; white-space: nowrap; }
+.link { display: inline-flex; align-items: center; border-bottom: 1px solid transparent; }
+.link:hover, .link.active, .contact:hover, .contact.active { color: #b5e853; }
+.link.active { border-bottom-color: #b5e853; }
+.actions { justify-self: end; display: flex; align-items: center; justify-content: flex-end; gap: 18px; }
+.icon { appearance: none; border: 0; padding: 4px; display: inline-grid; place-items: center; color: #e9e9e4; background: transparent; cursor: pointer; }
+.contact { display: inline-flex; align-items: center; }
+.cta { min-height: 40px !important; padding: 0 17px !important; border-radius: 5px !important; gap: 14px !important; white-space: nowrap; font-size: 13px !important; }
+.cta span { font-size: 16px; line-height: 1; }
+.burger { display: none; }
+@media (max-width: 980px) { .inner { grid-template-columns: 1fr auto; } .links { position: absolute; inset: 64px 0 auto; height: auto; padding: 14px var(--site-gutter) 20px; display: none; flex-direction: column; align-items: flex-start; background: #090a09; border-bottom: 1px solid #242824; } .links.open { display: flex; } .link { padding: 7px 0; } .actions { gap: 14px; } .burger { width: 34px; height: 34px; display: grid; align-content: center; gap: 6px; border: 0; background: transparent; cursor: pointer; } .burger span { display: block; width: 20px; height: 1px; background: #e9e9e4; } }
+@media (max-width: 560px) { .inner { height: 60px; } .logo img { width: 108px; } .icon, .contact { display: none; } .cta { min-height: 34px !important; padding: 0 11px !important; font-size: 11px !important; } .links { inset: 60px 0 auto; } }

@@ -84,7 +84,7 @@ export default function Terminal() {
           ))}
         </ul>
       </div>
-      <p className="terminal__caption">Welcome to Schrif, we ready to build!</p>
+      <p className="terminal__caption">WELCOME TO SCHRIF, WE ARE READY TO BUILD!</p>
     </div>
   );
 }

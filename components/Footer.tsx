@@ -1,14 +1,12 @@
-﻿import Link from "next/link";
+import Link from "next/link";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return <footer className="footer">
-    <div className="footer__inner">
-      <div className="footer__intro"><img src="/logo.png" alt="Schrif" width={150} height={32} /><p>Web development, IT, SEO and digital marketing for measurable growth.</p><span>root@schrif:~_</span></div>
-      <div><h2>Services</h2><Link href="/#web">Web Development</Link><Link href="/#seo">SEO</Link><Link href="/#marketing">Digital Marketing</Link><Link href="/#it">IT Solutions</Link></div>
-      <div><h2>More capabilities</h2><Link href="/#brand">Brand Identity</Link><Link href="/#ux">UI/UX Design</Link><Link href="/#ads">Performance Ads</Link></div>
-      <div><h2>Explore Schrif</h2><Link href="/#image">Image</Link><Link href="/#video">Video</Link><Link href="/pricing">Pricing</Link><Link href="/#photoshoot">Photoshoot</Link><Link href="/#editor">Photo Editor</Link></div>
-      <div><h2>Next steps</h2><Link href="/#workflow">Our workflow</Link><Link href="/connect">Discovery / Build / Scale</Link><Link href="/connect">Start a project</Link><Link href="/terms-of-service">Terms of Service</Link></div>
+    <div className={`${styles.inner} footer__inner`}>
+      <Link href="/" className={styles.brand} aria-label="Schrif home"><img src="/logo.png" alt="Schrif" width={150} height={32} /></Link>
+      <nav className={styles.links} aria-label="Footer"><Link href="/about">About Us</Link><Link href="/connect">Contact Us</Link><Link href="/terms-of-service">Terms of Service</Link></nav>
     </div>
-    <div className="footer__bottom"><span>© Schrif. All rights reserved.</span><span>Built with Intent.</span><a href="#top">Back to top ↑</a></div>
+    <div className={`${styles.bottom} footer__bottom`}><span>SCHRIF / BUILT WITH INTENT.</span><span>END OF PAGE. START OF SOMETHING. →</span></div>
   </footer>;
 }
