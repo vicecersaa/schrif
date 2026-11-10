@@ -30,7 +30,7 @@
 .wwdDisciplineGrid small{display:block;color:var(--white);font-size:13px}
 .wwdDisciplineGrid p{margin-top:22px;font-size:15px;line-height:1.5}
 @media(max-width:800px){.wwdIntro{padding:64px 0}.wwdIntro .wwdKicker{margin-bottom:35px}.wwdIntro .wwdHeading{margin-bottom:32px}.wwdDisciplineGrid article{min-height:0;padding:22px 0}.wwdDisciplineGrid h3{margin:17px 0 10px}.wwdDisciplineGrid p{margin-top:14px}}
-.wwdHero,.wwdIntro,.wwdSection,.wwdWeb,.wwdConnect,.wwdWorkflow{border-bottom:0!important}.wwdIntro .wwdShell,.wwdSection .wwdShell,.wwdWeb .wwdShell,.wwdConnect .wwdShell,.wwdWorkflow .wwdShell{padding-bottom:84px;border-bottom:1px solid var(--line)}@media(max-width:560px){.wwdIntro .wwdShell,.wwdSection .wwdShell,.wwdWeb .wwdShell,.wwdConnect .wwdShell,.wwdWorkflow .wwdShell{padding-bottom:54px}}
+.wwdHero,.wwdIntro,.wwdSection,.wwdWeb,.wwdConnect,.wwdWorkflow{border-bottom:0!important}.wwdIntro .wwdShell,.wwdSection .wwdShell,.wwdWeb .wwdShell,.wwdConnect .wwdShell,.wwdWorkflow .wwdShell{padding-bottom:84px;border-bottom:1px solid var(--line)}.wwdIntro .wwdShell{border-bottom:0}@media(max-width:560px){.wwdIntro .wwdShell,.wwdSection .wwdShell,.wwdWeb .wwdShell,.wwdConnect .wwdShell,.wwdWorkflow .wwdShell{padding-bottom:54px}}
 
 /* Foundation: three clear columns, matching the service-system layout. */
 .wwdFoundation{padding-top:72px}

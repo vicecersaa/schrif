@@ -5,11 +5,22 @@ import { useEffect, useState } from "react";
 // The reference animation is around six seconds. Preserve its sequence while
 // keeping the website transition quick.
 const MIN_VISIBLE_MS = 1800;
+const LOADER_SEEN_KEY = "schrif-home-loader-seen";
 
 export default function PageLoader() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
+    const isHardReload = navigation?.type === "reload";
+    const hasSeenLoader = window.sessionStorage.getItem(LOADER_SEEN_KEY) === "true";
+
+    // A first entry and a browser reload retain the full intro. Client-side
+    // navigation back to Home stays immediate.
+    if (!isHardReload && hasSeenLoader) return;
+
+    window.sessionStorage.setItem(LOADER_SEEN_KEY, "true");
+    setVisible(true);
     const timer = window.setTimeout(() => setVisible(false), MIN_VISIBLE_MS);
     return () => window.clearTimeout(timer);
   }, []);

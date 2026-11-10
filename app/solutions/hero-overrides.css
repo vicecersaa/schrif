@@ -248,14 +248,16 @@
 
 @media (min-width: 761px) {
   .solutionHeroArt {
-    animation: solutionDoodleFloat 4.6s ease-in-out infinite alternate;
-    will-change: transform;
+    /* Keep the PNG on whole pixels. Transforming the whole artwork makes
+       its fine terminal text look soft while the float is in motion. */
+    animation: solutionDoodleFloat 4.5s steps(18, end) infinite alternate;
+    will-change: background-position;
   }
 }
 
 @keyframes solutionDoodleFloat {
-  from { transform: translateY(-9px); }
-  to { transform: translateY(9px); }
+  from { background-position: center calc(50% - 9px); }
+  to { background-position: center calc(50% + 9px); }
 }
 
 /* Foundation block — desktop composition and its two bespoke service boards. */

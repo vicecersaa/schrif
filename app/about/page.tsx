@@ -97,7 +97,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className={styles.finalSection}><div className={styles.shell}><div className={styles.finalCard}><div><p className={styles.kicker}>STORY / CONTINUED WITH YOU</p><h2>The next chapter <strong>starts with a question.</strong></h2><p>Tell us what you want to change. We’ll find the right starting point together.</p></div><div><div className={styles.finalPrompt}>→ I have an idea. Let&apos;s make it real. _</div><div className={styles.finalActions}><Link href="/connect" className="btn btn--lime">Start a conversation</Link><Link href="/solutions" className="btn btn--outline">Explore solutions</Link></div><small>NO FINISHED BRIEF NEEDED. JUST A STARTING POINT.</small></div></div></div></section>
+    <section className={styles.finalSection}><div className={styles.shell}><div className={styles.finalCard}><div><p className={styles.kicker}>STORY / CONTINUED WITH YOU</p><h2>The next chapter <strong>starts with a question.</strong></h2><p>Tell us what you want to change. We’ll find the right starting point together.</p></div><div><form action="/connect" className={styles.finalForm}><label className={styles.finalPrompt}><span aria-hidden="true">→</span><input name="message" type="text" placeholder="I have an idea. Let&apos;s make it real." autoComplete="off" /></label><div className={styles.finalActions}><button type="submit" className="btn btn--lime">Start a conversation</button><Link href="/solutions" className="btn btn--outline">Explore solutions</Link></div></form><small>NO FINISHED BRIEF NEEDED. JUST A STARTING POINT.</small></div></div></div></section>
     <Footer />
   </main>;
 }
